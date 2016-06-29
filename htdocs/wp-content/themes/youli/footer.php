@@ -91,7 +91,7 @@
 		//}
 		
 		
-		var x=setInterval(doUpdates,10000);
+		var x=setInterval(doUpdates,20000);
 		function doUpdates() {
 		jQuery('.tabs-p .btn').click();
 		}
