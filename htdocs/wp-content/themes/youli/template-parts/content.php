@@ -38,6 +38,7 @@
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>
+      
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

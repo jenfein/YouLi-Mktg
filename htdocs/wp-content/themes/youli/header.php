@@ -48,8 +48,8 @@
     </div>
       <div style="display:none">
                             <div id="lbp-inline-href-1" class="pop-one form-club-t" style="">
-                                <h3 class="widget-title">EXPRESS INTEREST</h3>
-                              <?php echo do_shortcode('[contact-form-7 id="102" title="EXPRESS INTEREST"]'); ?> 
+                                <h3 class="widget-title">REQUEST INVITE</h3>
+                              <?php echo do_shortcode('[contact-form-7 id="102" title="REQUEST INVITE"]'); ?> 
                             </div>
 						</div>
 	<div class="site-inner">

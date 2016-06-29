@@ -56,6 +56,7 @@
 		</footer><!-- .site-footer -->
 <script>
 	jQuery(document).ready(function(e) {
+		
 		jQuery('.tabs-p .btn').click(function(e) {
             if(jQuery('.tabs-p .lft').hasClass('active'))
 			{
@@ -85,7 +86,17 @@
 					jQuery('.testo-box').css('display','none');
 				}
         });
+		//function event() {
+ 		//	jQuery('.tabs-p span').click();
+		//}
 		
+		
+		var x=setInterval(doUpdates,5000);
+		function doUpdates() {
+		jQuery('.tabs-p .btn').click();
+		}
+
+
 		jQuery('.tabs-p span').click(function(e) {
 			if(jQuery(this).hasClass('active')){
 				//jQuery('.tabs-p span').removeClass('active');

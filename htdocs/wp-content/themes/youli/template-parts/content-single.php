@@ -7,7 +7,7 @@
  * @since Twenty Sixteen 1.0
  */
 ?>
-
+<div class="s-posts">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -34,6 +34,10 @@
 				get_template_part( 'template-parts/biography' );
 			}
 		?>
+             Tags : <?php $tags = get_the_tags(); 
+if( $tags ) foreach( $tags as $tag ) { ?>
+<a href="<?php echo get_tag_link($tag->term_id); ?>"><?php echo $tag->name; ?></a>
+<?php break; } ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
@@ -51,3 +55,4 @@
 		?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+</div>

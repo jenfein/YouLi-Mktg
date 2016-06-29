@@ -517,6 +517,28 @@ input.wpcf7-submit {
     text-transform: none;
 }
 
+
+
+body.no-sidebar:not(.search-results) article:not(.type-page) .entry-content {clear: both;    float: none;    margin: auto;    width: 100%;}
+#comments {    margin: auto;    max-width: 965px; padding-left:15px; padding-right:15px;	padding-bottom:50px; }
+.s-posts{    margin: auto;    max-width: 965px;   padding-left:15px; padding-right:15px;	 padding-top: 50px;}
+.no-sidebar .entry-header, .no-sidebar .entry-content, .no-sidebar .entry-summary, .no-sidebar .entry-footer, .no-sidebar .comments-area, .no-sidebar .image-navigation, .no-sidebar .post-navigation, .no-sidebar .pagination, .no-sidebar .page-header, .no-sidebar .page-content, .no-sidebar .content-bottom-widgets{margin:auto;}
+.content-bottom-widgets{clear:both;}
+body.tag  .site-main{ margin:0 auto 50px auto;    max-width: 965px; padding-left:15px; padding-right:15px;	}
+body.tag  .site-main .page-header{border:none;}
+body.tag  .entry-footer{display:none;}
+
+
+
+.p-part {float: left;    height: 370px;    overflow: hidden;    position: relative;    width: 33.33%;	background:#000000;}
+.p-part .post-thumbnail {    margin: 0; vertical-align:middle;}
+.p-part .post-thumbnail img {    width: 100%; height:auto;	  transition: all 125ms ease-out 0s;}
+.p-part:hover .post-thumbnail img { transform:   scale(1.02);}
+.p-part .post-deta {    background: rgba(0, 0, 0, 0.2);    bottom: 0;    color: #ffffff;    left: 0;    padding: 10px 15px;    position: absolute;    text-align: center;    width: 100%;}
+.p-part .post-deta > p {    margin: 0; font-size:14px; font-weight:normal;}
+.p-part  a.cd-post-trigger{font-size: 1.375em; letter-spacing:0;    line-height: 1.36364; color:#fff; font-weight:bold; text-transform:uppercase;}
+
+
 @media only screen and (max-width : 768px) { 
 #header {padding: 20px 10px;}
 #slider .bx-wrapper .ewic-caption span {font-size: 150%;}
@@ -587,4 +609,12 @@ footer .main-navigation {
     display: none;
 }
 .site-footer{padding:10px 15px;}
+
+.p-part {height: auto; width: 100%; }
+
+}
+
+@media only screen and (min-width : 639px) and (max-width : 768px) {
+.p-part {height: auto; width: 50%; }
+.p-part:nth-child(2n+3) {clear:both;}
 }
